@@ -7,33 +7,18 @@ function whisper(string) {
 }
 
 function logShout(string) {
-  return console.log(string.toUpperCase)
+  return console.log(string.toUpperCase())
 }
 
-/*
-describe('logShout(string)', function() {
-  it('calls console.log() its one argument in all caps', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
+function logWhisper(string) {
+  return console.log(string.toLowerCase())
+}
 
-    logShout('hello')
-
-    expect(spy).toHaveBeenCalledWith('HELLO')
-
-    console.log.restore()
-  })
-}) */
-
-describe('logWhisper(string)', function() {
-  it('calls console.log() its one argument in all lowercase', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
-
-    logWhisper('HELLO')
-
-    expect(spy).toHaveBeenCalledWith('hello')
-
-    console.log.restore()
-  })
-})
+function sayHiToGrandma(string) {
+  var uppercase = "HELLO"
+  var lowercase = "hello"
+  var 
+}
 
 describe('sayHiToGrandma(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
